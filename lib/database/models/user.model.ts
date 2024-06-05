@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     firstName: { type: String },
     lastName: { type: String },
     planId: { type: String, default: 1 },
-    creditBalance: { type: String, default: 10 },
+    creditBalance: { type: Number, default: 10 },
 })
 
 const User = models?.User || model("User", UserSchema);
